@@ -1,0 +1,57 @@
+Lecture 04
+
+Before Lecture:
+==============
+
+I am using linux as my primary os for like 4 years. Thus I was known to the common package managers such as apt or yum.  
+
+After Lecture:
+==============
+
+Software can be divided into two groups:
+    - Computer software
+    - Third-party Software
+
+Software installation is made simple and scalable by package managers. It is possible to install additional package managers using package managers. The majority of programming environments and languages have their own package management tools, which frequently work together with built systems. We frequently need to rebuild your software from scratch and repackage it; No choice in the matter.
+
+No issues are resolved by mirroring dependencies that are untrustworthy and unverified. Without trust, the verification of integrity is useless. We depend on those very dependencies, which is why they are called as dependencies. Dependence, trust, and honesty are proportional to each other.
+
+Systems with multiple users have there own implications:
+    
+    - Recurring legal problems
+    - Disagreements between users
+    - The scaling graph must be exponential
+    - Users may desire to exchange files
+    - Users may want to keep files private, or try to access files they shouldn't be able to.
+    - Users may also want to act in a way that will have an adverse effect on other users.
+    - Various users could need various rights.
+
+To grant privileges, trust is necessary.
+
+    - The strength of the trust relationships decreases with the number of groups.
+    - No scale exists for trust.
+
+Authentication serves as identification rather than authorization proof. You may authenticate using something you have, something you know, or something you are. Multi-factor authentication can be useful for authentication to increase security.
+
+Every Unix account possesses the following characteristics: a distinct ID; membership in at least one group; potential for password protection; potential for valid login program; potential for privilege escalation. Every Unix file contains several protection bits and is associated with an uid and a gid. Certain tasks call for privileged access. Binding the port is an example, as is updating local passwords. for e.g Almost anything related to file systems
+
+Arbitary groups of users can share resources thanks to Unix groups. There can be 16 to 32 people maximum per group.
+We see the following even in the simplest environments:
+
+    - A central user database
+    - Users separated into several access groups
+    - Access to systems is essentially determined by such group membership
+    
+Role-based access control (RBAC) is a standard mechanism for segmenting and controlling the rights provided in this way.
+
+User equality is a multi-user truth.
+    More equal users than less equal users.
+    All are subject to the least privilege principle.
+    People need to be trusted.
+    No scale exists for trust.
+    Trade-offs will always be an issue.
+
+
+
+
+
