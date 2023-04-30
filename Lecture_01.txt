@@ -1,0 +1,18 @@
+Lecture 01
+==========
+
+Before Class:
+-------------
+
+I watched all the Week 01 Lecture Videos on youtube and warmed up about EC2 and how to start and instance which is actually gonna help me in Homework Assignment 01. 
+
+
+After Class:
+------------
+
+After Class I learned that what I'm gonna learn in this course as Professor explained each topic in details.
+
+AWS EC2
+
+
+
