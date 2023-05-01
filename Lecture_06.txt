@@ -1,0 +1,36 @@
+Lecture 06
+
+Before Lecture:
+==============
+
+I know the ARP protocol as I have done some practice of ARP Poisoning attack in my previous ethical hacking course. ARP Poisioning invloves sending malicious ARP packets to default gateway on LAN. So bascially attackers MAC address gets linked with an legit IP address of a computer on network. ping command also uses ICMP packets to reach the desired IP.
+
+
+After Lecture:
+==============
+
+
+What happens when we carry out a command?
+    - Connecting to the remote host
+    - Sending a command
+    - Receiving data
+
+Connection to distant host: 
+
+    - Open connection to IP address
+    - Host name look up
+
+Searching for a hostname requires accessing several local files and the IP address of a DNS server. We can ping the DNS server to resolve the hostname and receive the IP.
+
+Working: 
+
+    - Select the name server to query
+    - Inquire about the existence of a route to the name server
+    - Open a socket to a available port on the remote IP address
+    - Establish a socket and sends a query to the requested port on the remote IP
+    
+
+SMTP, HTTP, and TCP/UDP are examples of application layer protocols. IP, ICMP, and ARP are examples of network layer protocols.
+
+Protocol for Address Resolution: ARP
+Neighbour Discovery (ND): It is the IPv6 equivalent of the IPv4 ARP for layer 2 address resolution
