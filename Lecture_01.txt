@@ -1,18 +1,20 @@
 Lecture 01
-==========
 
 Before Class:
--------------
+=============
 
 I watched all the Week 01 Lecture Videos on youtube and warmed up about EC2 and how to start and instance which is actually gonna help me in Homework Assignment 01. 
 
 
 After Class:
-------------
+============
 
-After Class I learned that what I'm gonna learn in this course as Professor explained each topic in details.
+I gained knowledge of the various system administrator positions and received an overview of how they work on a daily basis. A system administrator is aware of the internet's age and unappealingness. They deal with several different types of wires on a daily basis.
+Learned about vertical and horizontal scaling and the circumstances under which each is useful. The phrase "If it can happen, it will happen" is one of my favorite laws, Murphy's Law, which is among the several favorite laws of administrators.
 
-AWS EC2
+System Administration Job requires patience and great practical experience of dealing with different types of systems. 
+
+
 
 
 

@@ -1,39 +1,37 @@
 Lecture 02
-==========
 
 
 Before Class:
--------------
+=============
 
-Week 02
-
+Prior to this lecture I knew different types of Disks and types of partitions as I use linux as my primary OS.
 
 
 After Class:
-------------
+============
 
 
 Partitions: 
-- Concentric Doughnuts
-- Boot
-- Filesystem
-- Swap
-- Reserved Partitions (Boot loader)
-- MBR
+    - Concentric Doughnuts
+    - Boot
+    - Filesystem
+    - Swap
+    - Reserved Partitions (Boot loader)
+    - MBR
 
 Differnet types of data blocks sitting somewhere on a disk
 
 A super block (if you miss a super block you look all the data on the super block)
--inode blocks
--data blocks
--directory blocks
+    -inode blocks
+    -data blocks
+    -directory blocks
 
 inodes:
-- inodes store metadata about the file but not the file name and file data. Too much file data but small metadata
+    - inodes store metadata about the file but not the file name and file data. Too much file data but small metadata
 
 Filesystems:
 
--ffs = fast file system
+    -ffs = fast file system
 
 
 Important Notes:
