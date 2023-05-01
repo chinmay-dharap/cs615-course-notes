@@ -1,0 +1,48 @@
+Lecture 07
+
+Before Lecture:
+==============
+
+Prior to this lecture I knew alot about the HTTP protocol as I have extensively used Apache Server for web development in my undergraduate studies. Along with the Http, I had plenty knowledge of DNS and there record types. Alot of times I have tried to hosted my own portfolio website on 000webhost which provides free web hosting. But the issue was the website url used to show a weird name like "03hadsnj.000webhost.com". I wanted a legit name for my website so I purchased a domain name from godaddy and played with the CNAME records so that 000webhost website should point to my domain name. But I don't remember what I did as it was almost 3 years ago when I found an easier method to host my portfolio website on github pages.
+
+
+After Lecture:
+==============
+
+A tree of domain names can be found in the domain name space. Domain names are read from left to right, separated with a "." A FQDN (Fully Qualified Domain Name) is a host name that includes a domain name.
+
+Prior to the DNS, domain names were assigned by the Network Information Center (NIC) at Stanford Research Institute (SRI).  The root zone is managed by IANA (.)
+
+If you control one node in the domain name space, you control all of its branches and subtrees.
+
+Distributed systems are used in DNS (Domain Name Server).
+
+13 root authorities are present.
+
+13 root server addresses are available.
+
+Uses of DNS:
+    - To identify the sources of SPAM
+    - Detect email spoofing
+    
+HTTP is a transfer protocol that serves data rather than a particular type of text.
+It is a request/response protocol:
+    - Client sends a request to the server
+    - Server responds to the request
+    
+Typically, HTTP traffic is very asymmetric. Although HTTP 2.0 is available now, HTTP 1.1 is still in use because it is the most common. DNS Round Robin load balancing, web caching, and content delivery networks are methods for reducing HTTP overload.
+
+While, setting up HTTP and DNS is simple, getting them to work properly is not.
+
+Server status codes:
+    - 1xx– Informational; Request received, continuing process
+    - 2xx– Success; The action was successfully received, understood,and accepted
+    - 3xx– Redirection; Further action must be taken in order to completethe request
+    - 4xx– Client Error; The request contains bad syntax or cannot befulfilled
+    - 5xx– Server Error; The server failed to fulfill an apparently validrequest
+    
+  
+CDN restrictions:
+    - CDN monitors all traffic
+    - The CDN manages certificate keys
+
