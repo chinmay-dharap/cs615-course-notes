@@ -1,0 +1,74 @@
+Lecture 10
+
+Before Lecture:
+==============
+
+I was very interested in this lecture from a long time because I was always interested in Disaster Recovery and Incident Response. Back in India, I created a Networked Attached Storage using Raspberry Pi 3b+. I had 3 extra HDD's. So I decided to create a RAID 5 configuration using those 3 disks striped together because I knew one of the disk is gonna die soon because I took it from my old laptop xD. Thus, I was able to use 2 drives for storage and could have handled one drive failure using RAID 5.
+
+
+After Lecture:
+==============
+
+The capacity to restore data is the only objective that backups serve to achieve.
+
+
+Long-term storage: 
+
+- Whole set of level 0 backups stored separately from other backups, typically off-site recovery/retrieval takes time with granularity restrictions.
+- Considerations for storage media
+- Concerns for transporting storage media
+- Backup and recovery encryption key administration
+
+Backups are required for: 
+
+    - Recovering from data loss
+    - Long-term storage
+    - Archiving.
+
+Consider your backups to be insurance that you invest in and pay for in the hopes that you never need it.
+
+Disaster recovery: 
+    
+    - Individual system downtime due to loss of the complete file system
+    - The retrieval of archival backups from long-term storage, which may take a long time to restore, frequently results in some data loss.
+    - RAID helps alot (not a fullproof solution)
+
+Accidently deleted files should be recoverable for sometime. But some files if deleted, should be gone for good.
+
+In order to allow for the undoing of file deletion, dump(8) preserves files (and file attributes).
+
+
+Backup of the file system using WAFL (Write Anywhere File Layout), an operating system from NetApp called "Data ONTAP":
+
+    - A snapshot is a read-only replica of a file system that is created periodically ("checkpoints" which occur every 10 seconds), allowing for quick recovery from crashes.
+    
+    - Similar to WAFL, ZFS uses a copy-on-write transactional object architecture, where alterations are copied to a new location while referencing old data rather than overwriting it.
+    
+
+If any problem arises we can always check the logs
+
+A simple unexpected or undesirable incident could be the cause of something ending up wrong. You can diagnose, foresee, and even stop unfavorable situations if you are able to recognize key events.
+
+In order to do that:
+
+    - Understand your applications
+    - Recognize your users
+    - Understand the traffic patterns
+    - Recognize your systems
+    
+ Know how your system performs:
+    - CPU load
+    - Memory usage (for example, using top(1) and vmstat(1))
+    - Disk I/O (using iostat(1))
+    - User activity, such as ac(1), lsof(8), and sa(8)
+    
+    
+Events can be recorded in logs and might happen infrequently, regularly, or continually. They can also be made up of additional events. May be there can be a possibility where nothing (new) happened.
+
+Metrics: 
+
+    - Correlating related events can be used to spot outliers, set off other events, or guide (interactive or automated) decision-making.
+    - You may locate meaningful events in your metrics haystack by using context.
+    
+Graphs are a great tool for understanding metrics. Always log events to create metrics.
+    
