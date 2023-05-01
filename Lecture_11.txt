@@ -1,9 +1,9 @@
-Lecture 08
+Lecture 11
 
 Before Lecture:
 ==============
 
-Before this lecture I didn't know amout Configuration Management at all. 
+Before this lecture I didn't know about Configuration Management at all. 
 
 After Lecture:
 ==============
