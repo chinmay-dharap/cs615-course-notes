@@ -1,0 +1,54 @@
+Lecture 08
+
+Before Lecture:
+==============
+
+I was known to MX record type of DNS before this lecture as I have tried to send some mails from my own domain by using SMTP protocol. 
+
+
+After Lecture:
+==============
+
+
+HTTP Secure is known as HTTPS.
+
+TLS - Transport Layer Security. It utilizes Layer 6.
+
+Method: 
+    - Client the current list of encryption suites that are supported
+    - Server Greetings, selects cipher suite
+    - Client Certificate Request
+    - Client Key Exchange Message
+    - Client Certificate Verification
+    - Client Changes Cipher
+    - Server Changes Cipher specifications.
+
+A website is not necessarily trustworthy just because it has a valid certificate.
+
+More than 70% of emails are spams .
+
+The Mail Systems has the following parts: 
+
+    - Mail User Agent (MUA)
+    - Mail Delivery Agent (MDA)
+    - Mail Transfer Agent (MTA)
+    
+Many MUAs interpret HTML.
+
+SMTP codes consists of 3 digits in 5 classes:
+    1xx– Mail server has accepted the command, but does not yet takeany action. A confirmation message is required
+    2xx– Mail server has completed the task successfully without errors.
+    3xx– Mail server has understood the request, but requires furtherinformation to complete it.
+    4xx– Mail server has encountered a temporary failure. If thecommand is repeated without any change, it might be completed. Trying again may help.
+    5xx– Mail server has encountered a fatal error. Your request can’tbe processed.
+    
+An email has following parts:
+    - Headers (mandatory)
+    - Alternative headers
+    - The mail body
+
+SMTP uses port 25 to transmit mails from one server to another. Mail may be processed or relayed by numerous servers while in transit. Authenticity cannot be ensured. By establishing the list of permitted transmitting MXs, Sender Policy Framework can assist in the detection of email spoofing.
+
+DKIM, also known as Domain Keys Identified Mail, can stop email spoofing by applying a digital signature to different areas of the message. The DMARC protocol, which stands for domain-based message authentication, reporting, and conformance, stipulates which validation techniques should be used for a certain domain.
+
+Note: Use of SSL is not advised.
