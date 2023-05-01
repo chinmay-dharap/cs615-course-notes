@@ -1,0 +1,52 @@
+Lecture 08
+
+Before Lecture:
+==============
+
+Before this lecture I didn't know amout Configuration Management at all. 
+
+After Lecture:
+==============
+
+An isolated system's entropy never goes down. A static system serves no purpose.
+
+- Data is processed: new, modified, and deleted files are created.
+- Software is added, upgraded, uninstalled, and systems are formed, copied, and decommissioned.
+- Even more transient are instances and containers, which emerge and vanish as needed. 
+
+
+- Every Sysadmin uses scp(1), rsync(1), or some variation to pull in mutual authentication while essentially ignoring incompatibilities because doing things correctly is difficult and inconvenient.
+- Switch Write an inventory database and deploy a well-known CM system using the to push with remote daemon.
+
+There are shared attributes between many sets of servers. Consider an HTTP server, for instance:
+    - The necessary server software that complies with the TLS standard
+    - Configuration of a shared TLS certificate and key database
+    - Static files (HTML, JS, and CSS)
+
+Software installation, service administration, monitoring of file permissions, ownership, command execution, static files, and host-specific data gathering are requirements for CM.
+
+Set up your resources in groups.
+
+
+The CM systems themselves are complicated. But they are essentially trustworthy. But everything can also be ruined by CM systems to the point that the damage is irreversible.
+
+Take into account the automatic mistake detection, rollback capabilities of staged rollout of change sets.
+    
+
+Each and every CM operation must be unchanged.
+
+CM systems must guarantee that changes are:
+    - Unchanged
+    - Only used when necessary
+    - Eventually reliable
+
+Distributed systems include CM systems. As a result, the CAP Theorem applies to them.
+
+    - Consistency: Each system that the CM manages complies with the requirements of its specific service specification.
+    
+    - Availability: Even if no further updates or change sets can be retrieved, the services managed by the CM are still accessible.
+    
+    - Partition tolerance: The CM system's ability to function despite pauses between its components, i.e. the absence of the need for coordinated intermediate modifications.
+
+Network hardware, Load balancers, and containers are required for a CM.
+
