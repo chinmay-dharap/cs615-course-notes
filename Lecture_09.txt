@@ -1,0 +1,39 @@
+Lecture 09
+
+Before Lecture:
+==============
+
+Prior to this lecture I never actually created any automated scripts except when I wanted my favorite tools after a fresh install of Kali linux. So I made a bash script where I hardcoded all the github repos of those tools which I wish to download in one go. It was a really basic bash script basically some linux command packed together. Other than that I have never actually done any scripting.
+
+
+After Lecture:
+==============
+
+The advantages of automation include: 
+    - Repeatability.
+    - Reliability
+    - Consistency
+    - Flexibility
+
+The benefits of automation are universal.
+
+Automation demands work and time. It makes things more complex for e.g if you want to write a tool which is going to take alot of arguments then you would have to write it neatly so that it will run on literally any system. Automation may lead to loss of audit trail.
+
+System tool documentation is necessary.
+
+Diffrence between Scripting and Programming:
+
+    - Scripting is frequently appropriate for a single user.
+    - Programming is appropriate for difficult to moderate tasks.
+
+Software development employs a formal methodology from software engineering. It needs ongoing maintenance. We have to recognize our needs to choose the appropriate tool. On most platforms, Bourne shell is available and trustworthy. Shell is also considered reliable as other programming languages
+
+Some things we should keep in mind while Scripting or Programming:
+
+    - Utilize the libraries that are available.
+    - Use descriptive variables and function names, and write descriptive code.
+    - Comments should include justification, not assertions.
+    - Errors shouldn't ever go unnoticed.
+    - More people discover more bugs. So testing on different platforms with different situations is preferable.
+    
+Version Control Systems must be used effectively. They let you to work on a code base while collaborating with others. Using such platforms save a track of the who, when, what, and why of any modifications and save old versions of files release engineering through branch creation. for e.g github.
