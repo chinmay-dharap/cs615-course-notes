@@ -1,0 +1,56 @@
+Lecture 05
+
+Before Lecture:
+==============
+
+Before this lecture, as I took TCP/IP Networking course in last Fall, I know basics IP addressess and there types/classes. Also I have used tcpdump tool before when I learned about packet capture in my Certified Ethical Hacker course from EC Council. But RIR and LIR was two new concepts for me. I knew about IANA. But not about RIRs
+
+After Lecture:
+==============
+
+IPv4 is 32 bits
+    ex. 11111111 00000000 11110000 00001111
+
+A IPv4 address is made up of 4 octets.
+
+The netmask divides an IPv4 address into two parts:
+    - Network component 
+    - Host component
+    
+Without a router, hosts on the same domain can communicate with one another.
+
+Class A, B, C, D, and E are the five classes of IPv4 networks.
+
+Network address is for the subnet's initial address.
+Broadcast address is the last address on the subnet.
+
+IANA, the Internet Assigned Numbers Authority, is in charge of managing the root zone and assigning global IP addresses and AS numbers.
+
+Regional Internet Registries (RIR) is an organization that oversees the distribution and registration of Internet number resources in particular geographical areas.
+
+RIRs give LIRs (Local Internet Registries) blocks of IP addresses.
+
+ISPs, businesses with a large number of addresses, or educational institutions can be some examples of LIRs.
+
+As more and more devices are added, the IPv4 address space is becoming increasingly scarce. IPv4 can only have 232 addresses because it is a 32-bit protocol.
+
+
+There are 3 kinds of Address scopes:
+
+    - Link-Local (example: fe80::e276:63ff:fe72:3900%xennet0)
+        => Utilized on just one link
+        => Links do not forward packets having link-local source or destination addresses.
+
+    - Unique-Local (fc00::/7)
+        => Utilized for personal IPv6 networks
+        => Applications that are not globally routable and are similar to RFC 1918
+        
+    -  Global (for instance, 2001: 470: 1f07: 3d1:
+        => An international address
+        => Any area of the global network can receive packets with global addresses.
+    
+The RIRs receive Autonomous System Numbers (ASNs) from IANA.
+        
+Through the WHOIS protocol, one can search online databases for information such as IP blocks and ASNs. The internet is a real-world setting. Layer 2 protocol, or Data Link layer, is Ethernet.
+
+To determine the route a packet follows, use Traceroute. Tcpdump is a tool which can be used to capture the network packets. Super-user privileges are necessary for tcpdump.
