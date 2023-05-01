@@ -1,0 +1,55 @@
+Lecture 12
+
+Before Lecture:
+==============
+
+As a student who has global level certification in ethical hacking and computer forensics, system security was one of the most important topic that I have learned in my studies till now. From System Hacking to System Security I have learned the methods of finding vulnerabilites, escalating privileges and patch those very systems as well. I would like to mention about a specific project that I did in my third year of engineering. I created a Custom python cryptographic logic to encrypt the metasploit payload so that windows defender would not recognize it as a malicious file. This was very similar to what a student showed in this class as his presentation. But he used go to encrypt the payload and I used python. And I was really amazed that this method still works on windows as it was really simple to execute. Because when I did this as a small project it was 2020 and now its 2023.
+
+After Lecture:
+==============
+
+Security is variable and dependent on the system. Risk is the chance of experiencing injury or losing data.
+
+Those that compromise data lose:
+    - Obtaining data
+    - Availability of services and data integrity
+    - Reputation
+    - Financial loss
+
+Identify risk:
+    - Identify resources
+    - Identify dangers
+    - Identify weak points
+    - Calculate the likelihood of harm
+    - Determine the recovery costs.
+    - Calculate the cost of defense
+
+Risks are defined and targeted. Specific risks can only be reduced by preventing attack vectors. What and who are you sheltering from dangers you can't defend against should be noted. Competitors are human actors with definite objectives. You need others to defend you. Set a good example and look for allies Always seek the advice of specialists outside your team.
+
+
+Never think that one defense mechanism is enough. Always presume that the other defenses you have put in place can be bypassed or compromised.
+
+Cryptography is not a panacea for all issues. It might offer security in the following areas:
+    - Integrity confidentiality
+    - Authenticity
+
+Note: Authorization!= Authentication
+
+A pair of forms of cryptography
+    - Public Key, such as RSA.
+    - Private Key, such as DES
+
+Don't ever encode secrets. Use key management systems at all times. Never encrypt user passwords; always hash them
+
+Some important things to keep in mind in order to achieve good security:
+
+    - Always use a dedicated account instead of running services as root.
+    - Always grant access explicitly
+    - Memory management, race situations, privilege escalation, and confusion are just a few examples of the various sorts of vulnerabilities.
+    - Avoid developing your own crypto.
+    - Always make a deliberate choice when outsourcing; never follow promises blindly without considering the trade-offs.
+    - Use automation
+    - Human error can always occur instead of malicious intent. 
+    - Keep an accurate record of your assets.
+    - Implement multi-factor authentication
+    - Avoid MITMing your own users.
